@@ -1,4 +1,5 @@
 class Train
+	attr_reader :carriages
 	def initialize (number, type, carriages)
 		@number = number
 		@type = type
@@ -15,10 +16,6 @@ class Train
 
 	def slow_down
 		@speed = 0
-	end
-
-	def carriages
-		@carriages
 	end
 
 	def add_carriages
